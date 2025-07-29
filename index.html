@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服コーデ提案アプリ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>今日の服を決めよう！</h1>
+
+<!-- テキストで服を登録（トップス・ボトムス） -->
+<div class="input-area">
+<input type="text" id="topInput" placeholder="トップスを追加">
+<button onclick="addTop()">追加</button>
+<ul id="topList"></ul>
+
+<input type="text" id="bottomInput" placeholder="ボトムスを追加">
+<button onclick="addBottom()">追加</button>
+<ul id="bottomList"></ul>
+</div>
+
+<button onclick="suggestOutfit()">今日のコーデを決める</button>
+
+<div id="resultArea"></div>
+
+<hr>
+
+<!-- 画像アップロードエリア -->
+<h2>服の写真を追加</h2>
+<input type="file" accept="image/*" id="imageInput">
+<br><br>
+<img id="preview" src="" alt="プレビュー画像" style="max-width: 200px;">
+
+<!-- JavaScriptの読み込み -->
+<script src="script.js"></script>
+</body>
+</html>
